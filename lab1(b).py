@@ -6,6 +6,6 @@ today = datetime.date.today()
 year = today.year
 age = year - birth_year
 if age >= 60:
-print(name + "is a senior citizen")
+  print(name + "is a senior citizen")
 else:
-print(name + "is not a senior citizen")
+  print(name + "is not a senior citizen")
