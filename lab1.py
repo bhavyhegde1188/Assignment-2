@@ -1,3 +1,4 @@
+#develope a python program to read students details Name,usn and marks in three subejects and display it.
 name = input("Enter the student name: ")
 usn = input("Enter the student USN: ")
 phy = int(input("Enter the marks obtained in Physics: "))
