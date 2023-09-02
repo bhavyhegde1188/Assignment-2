@@ -1,4 +1,4 @@
-Mean, Variance and Standard Deviattion
+#Mean, Variance and Standard Deviation
 n = int(input("Enter the number students: "))
 list1 = []
 for i in range(n):
