@@ -4,29 +4,32 @@
  ‘Complex’ to represent the complex number. Develop a 
  program to read N (N >=2) complex numbers and to 
  compute the addition of N complex numbers. ''' 
-  
- class Complex: 
-     def _init_(self, real=0, imag=0): 
-                 self.real = real 
-         self.imag = imag 
-     def _add_(self, other): 
-         real_part = self.real + other.real 
-         imag_part = self.imag + other.imag 
-         return Complex(real_part, imag_part) 
-     def _str_(self): 
-         return f"{self.real} + {self.imag}i" 
- ca = Complex(-2, -5) 
- cb = Complex(12, 8) 
- print(ca, '+', cb, '=', (ca + cb)) 
- print('\n',type(ca), id(ca), '\n') 
- complex_list = [] 
- n = int(input("How many complex numbers you want to add:")) 
- for i in range(n): 
-     r = float(input("Enter the real part of the complex number: ")) 
-     im = float(input("Enter the imaginary part of the complex number:")) 
-     print() 
-     complex_list.append(Complex(r, im)) 
- sum_series = Complex() 
- for j in complex_list: 
-     sum_series += j 
- print("\nThe sum of the given Complex numbers is:", sum_series)
+ class Student:
+    def _init_(self, name="", usn="", marks=[]):
+        self.name = name
+        self.usn = usn
+        self.marks = list()
+
+    def getMarks(self):
+        for i in range(3):
+            self.marks.append(float(input(f"Enter marks for subject {i + 1}: ")))
+
+    def getdetails(self):
+        self.name = input("Enter the name: ")
+        self.usn = input("Enter the USN: ")
+
+    def display(self):
+        print("Score Card:")
+        print("Name:", self.name)
+        print("USN:", self.usn)
+        print("Marks in each subject:", self.marks)
+        total = 0
+        for x in self.marks:
+            total += x
+        print("Total Marks:", total)
+        print("Percentage:", total / 3, '%')
+
+x = Student()
+x.getdetails()
+x.getMarks()
+x.display()  
