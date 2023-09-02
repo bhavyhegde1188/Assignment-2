@@ -1,3 +1,4 @@
+#Read a multidigit number from the console.Develope a program to friny the frequency of each digit with a suitable message
 num = input("Enter a multi digit number: ")
 zeros = ones = twos = three = four = five = six = seven = eight = nine = 0
 for i in num:
