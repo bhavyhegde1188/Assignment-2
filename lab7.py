@@ -8,9 +8,9 @@ def backup_folder_to_zip(source_folder, zip_filename):
   zipf = zipfile.ZipFile(zip_filename, 'w')  
   for foldername, subfolders, filenames in os.walk (source_folder):  
     for filename in filenames:  
-     file_path = os.path.join(foldername, filename)  
-     zipf.write(file_path, os.path.relpath(file_path, source_folder))  
-     print(f"Zipping: {file_path}")  
+      file_path = os.path.join(foldername, filename)  
+      zipf.write(file_path, os.path.relpath(file_path, source_folder))  
+      print(f"Zipping: {file_path}")  
    zipf.close()  
    print(f"Backup successful: '{source_folder}' has been backed up to '{zip_filename}.") 
 folder_to_backup= input("Enter the name of the folder to backup : ") 
