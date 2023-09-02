@@ -1,3 +1,4 @@
+#Develope a program to print 10 frequently appearing words in a text file.
 testFile = open('C:\\Users\\Student\\Desktop\\test.txt', 'r') 
 testContent = testFile.read() 
 word_list = testContent.split()
