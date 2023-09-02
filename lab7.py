@@ -1,3 +1,4 @@
+#develop a pgm for backing up a given folder into a zip file by using relevant modules and suitable methods. 
 import os  
 import zipfile  
 def backup_folder_to_zip(source_folder, zip_filename):  
