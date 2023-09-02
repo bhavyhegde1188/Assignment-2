@@ -1,3 +1,4 @@
+Factorial and bionomial coefficient
 n = int(input("Enter the value of n: "))
 r = int(input("Enter the value of r: "))
 if n == 0 or n == 1:
